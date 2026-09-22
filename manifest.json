@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-09-22T05:49:54.877895299Z",
+  "source_url": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/sdn_advanced.xml",
+  "source_last_modified": "Fri, 18 Sep 2026 14:01:59 GMT",
+  "source_sha256": "8d64eef6932ad713709f1ea7cc0e0e003d68308eb9d1ac5637268d666fdc056f",
+  "total": 1056,
+  "per_chain_counts": {
+    "ARB": 1,
+    "BCH": 7,
+    "BNB": 1,
+    "BSC": 1,
+    "BSV": 1,
+    "BTG": 1,
+    "DASH": 5,
+    "DOGE": 2,
+    "ETC": 1,
+    "ETH": 120,
+    "LTC": 13,
+    "SOL": 4,
+    "TRX": 254,
+    "USDC": 2,
+    "USDT": 94,
+    "XBT": 532,
+    "XMR": 11,
+    "XRP": 1,
+    "XVG": 1,
+    "ZEC": 4
+  }
+}

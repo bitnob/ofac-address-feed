@@ -1,0 +1,124 @@
+name: Update sanctioned address list
+
+on:
+  schedule:
+    # Nightly at 00:00 UTC.
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+# Never let two publish attempts race each other onto the lists branch.
+concurrency:
+  group: update-sanctioned-list
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main (code)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: main
+
+      - name: Checkout lists branch (prior published state, best-effort)
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: lists
+          path: lists
+        continue-on-error: true
+
+      - name: Set up Go
+        uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7.0.0
+        with:
+          go-version-file: main/go.mod
+
+      - name: Build ofac-feed
+        working-directory: main
+        run: go build -o "${GITHUB_WORKSPACE}/ofac-feed" ./cmd/ofac-feed
+
+      - name: Generate address lists
+        run: ./ofac-feed -out out
+
+      - name: Shrink guard (refuse to publish a collapsed list)
+        run: |
+          PREV="lists/manifest.json"
+          if [ ! -f "$PREV" ]; then
+            echo "No manifest.json found on the lists branch (first publish?) — skipping drop comparison."
+            PREV=""
+          fi
+          ./ofac-feed shrinkguard -current out/manifest.json -previous "$PREV"
+
+      - name: Cross-check against independent reference feed (skipped if unconfigured)
+        run: ./ofac-feed crosscheck -dir out -reference-url "${{ vars.REFERENCE_FEED_URL }}"
+
+      - name: Publish out/ to the lists branch
+        id: publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd out
+          git init -q
+          git checkout -q -b lists
+          git config user.name "ofac-feed-bot"
+          git config user.email "ofac-feed-bot@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+
+          if git ls-remote --exit-code --heads origin lists >/dev/null 2>&1; then
+            git fetch -q --depth 1 origin lists
+            # Reset the index (not the working tree) to the currently-published
+            # tree, so `git add -A` below stages a true content diff against it.
+            git reset -q origin/lists
+          fi
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No content changes; nothing to publish."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -q -m "chore: update sanctioned address list"
+            git push -q origin HEAD:lists
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # --- Alerting -------------------------------------------------------
+      # A silently-failing job that keeps serving a stale sanctions list is
+      # exactly the failure mode this exists to prevent, so any failure above
+      # (fetch error, shrink-guard trip, cross-check misses, publish failure)
+      # must be loud: open (or update) a tracking issue.
+
+      - name: Open/update a GitHub issue on failure
+        if: ${{ failure() }}
+        uses: actions/github-script@d746ffe35508b1917358783b479e04febd2b8f71 # v9.0.0
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = "OFAC feed: nightly update failing";
+            const runUrl = `${context.serverUrl}/${owner}/${repo}/actions/runs/${context.runId}`;
+            const body = [
+              "The nightly OFAC address feed update failed.",
+              "",
+              `Run: ${runUrl}`,
+              "",
+              "A stale, silently-failing sanctions list is the exact failure this alert",
+              "exists to prevent — please investigate before relying on the published list.",
+            ].join("\n");
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner, repo, state: "open",
+            });
+            const existing = issues.find((i) => i.title === title);
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: existing.number, body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner, repo, title, body, labels: ["ofac-feed-alert"],
+              });
+            }

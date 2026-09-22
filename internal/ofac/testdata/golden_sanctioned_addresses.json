@@ -1,0 +1,32 @@
+[
+  {
+    "address": "0x1111111111111111111111111111111111111111",
+    "name": "EVIL CORP",
+    "program": "CYBER2",
+    "chain": "ETH"
+  },
+  {
+    "address": "0x2222222222222222222222222222222222222222",
+    "name": "EVIL CORP",
+    "program": "CYBER2",
+    "chain": "ETH"
+  },
+  {
+    "address": "0x8589427373d6d84e98730d7795d8f6f8731fda16",
+    "name": "EVIL CORP",
+    "program": "CYBER2",
+    "chain": "ETH"
+  },
+  {
+    "address": "TAbbVaBKgH4VBLXgWqACuwoKF4cH1HinQh",
+    "name": "BAD ACTOR",
+    "program": "DPRK3",
+    "chain": "TRX"
+  },
+  {
+    "address": "12aNKp2iDKuhEde2YfPdd4DFGenRUTKupL",
+    "name": "EVIL CORP",
+    "program": "CYBER2",
+    "chain": "XBT"
+  }
+]

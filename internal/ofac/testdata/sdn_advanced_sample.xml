@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Sanctions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="3" xmlns="https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/ADVANCED_XML">
+  <DateOfIssue CalendarTypeID="1">
+    <Year>2026</Year>
+    <Month>9</Month>
+    <Day>18</Day>
+  </DateOfIssue>
+  <ReferenceValueSets>
+    <DetailTypeValues>
+      <DetailType ID="1432">TEXT</DetailType>
+    </DetailTypeValues>
+    <FeatureTypeValues>
+      <FeatureType ID="8" FeatureTypeGroupID="2">Birthdate</FeatureType>
+      <FeatureType ID="344" FeatureTypeGroupID="1">Digital Currency Address - XBT</FeatureType>
+      <FeatureType ID="345" FeatureTypeGroupID="1">Digital Currency Address - ETH</FeatureType>
+      <FeatureType ID="887" FeatureTypeGroupID="1">Digital Currency Address - USDT</FeatureType>
+      <FeatureType ID="992" FeatureTypeGroupID="1">Digital Currency Address - TRX</FeatureType>
+      <FeatureType ID="1167" FeatureTypeGroupID="1">Digital Currency Address - SOL</FeatureType>
+    </FeatureTypeValues>
+  </ReferenceValueSets>
+  <DistinctParties>
+    <DistinctParty FixedRef="1001">
+      <Comment />
+      <Profile ID="1001" PartySubTypeID="4">
+        <Identity ID="5001" FixedRef="1001" Primary="true" False="false">
+          <Alias FixedRef="1001" AliasTypeID="1403" Primary="true" LowQuality="false">
+            <DocumentedName ID="7001" FixedRef="1001" DocNameStatusID="1">
+              <DocumentedNamePart>
+                <NamePartValue NamePartGroupID="9001" ScriptID="215" ScriptStatusID="1" Acronym="false">EVIL</NamePartValue>
+              </DocumentedNamePart>
+              <DocumentedNamePart>
+                <NamePartValue NamePartGroupID="9002" ScriptID="215" ScriptStatusID="1" Acronym="false">CORP</NamePartValue>
+              </DocumentedNamePart>
+            </DocumentedName>
+            <DocumentedName ID="7002" FixedRef="1001" DocNameStatusID="2">
+              <DocumentedNamePart>
+                <NamePartValue NamePartGroupID="9003" ScriptID="160" ScriptStatusID="1" Acronym="false">شر</NamePartValue>
+              </DocumentedNamePart>
+            </DocumentedName>
+          </Alias>
+          <Alias FixedRef="1001" AliasTypeID="1400" Primary="false" LowQuality="true">
+            <DocumentedName ID="7003" FixedRef="1001" DocNameStatusID="2">
+              <DocumentedNamePart>
+                <NamePartValue NamePartGroupID="9004" ScriptID="215" ScriptStatusID="1" Acronym="false">Nefarious LLC</NamePartValue>
+              </DocumentedNamePart>
+            </DocumentedName>
+          </Alias>
+        </Identity>
+        <Feature ID="26091" FeatureTypeID="8">
+          <FeatureVersion ID="23830" ReliabilityID="1">
+            <Comment />
+            <VersionDetail DetailTypeID="1431">1974</VersionDetail>
+          </FeatureVersion>
+          <IdentityReference IdentityID="5001" IdentityFeatureLinkTypeID="1" />
+        </Feature>
+        <Feature ID="26100" FeatureTypeID="345">
+          <FeatureVersion ID="24001" ReliabilityID="1">
+            <Comment />
+            <VersionDetail DetailTypeID="1432">0x8589427373D6D84E98730D7795D8f6f8731FDA16</VersionDetail>
+          </FeatureVersion>
+          <IdentityReference IdentityID="5001" IdentityFeatureLinkTypeID="1" />
+        </Feature>
+        <Feature ID="26101" FeatureTypeID="345">
+          <FeatureVersion ID="24002" ReliabilityID="1">
+            <Comment />
+            <VersionDetail DetailTypeID="1432">   0x1111111111111111111111111111111111111111, 0x2222222222222222222222222222222222222222   </VersionDetail>
+          </FeatureVersion>
+          <IdentityReference IdentityID="5001" IdentityFeatureLinkTypeID="1" />
+        </Feature>
+        <Feature ID="26102" FeatureTypeID="344">
+          <FeatureVersion ID="24003" ReliabilityID="1">
+            <Comment />
+            <VersionDetail DetailTypeID="1432">12aNKp2iDKuhEde2YfPdd4DFGenRUTKupL</VersionDetail>
+          </FeatureVersion>
+          <IdentityReference IdentityID="5001" IdentityFeatureLinkTypeID="1" />
+        </Feature>
+      </Profile>
+    </DistinctParty>
+    <DistinctParty FixedRef="1002">
+      <Comment />
+      <Profile ID="1002" PartySubTypeID="4">
+        <Identity ID="5002" FixedRef="1002" Primary="true" False="false">
+          <Alias FixedRef="1002" AliasTypeID="1403" Primary="true" LowQuality="false">
+            <DocumentedName ID="7010" FixedRef="1002" DocNameStatusID="1">
+              <DocumentedNamePart>
+                <NamePartValue NamePartGroupID="9010" ScriptID="215" ScriptStatusID="1" Acronym="false">BAD ACTOR</NamePartValue>
+              </DocumentedNamePart>
+            </DocumentedName>
+          </Alias>
+        </Identity>
+        <Feature ID="26200" FeatureTypeID="992">
+          <FeatureVersion ID="24010" ReliabilityID="1">
+            <Comment />
+            <VersionDetail DetailTypeID="1432">TAbbVaBKgH4VBLXgWqACuwoKF4cH1HinQh</VersionDetail>
+          </FeatureVersion>
+          <IdentityReference IdentityID="5002" IdentityFeatureLinkTypeID="1" />
+        </Feature>
+        <Feature ID="26201" FeatureTypeID="345">
+          <FeatureVersion ID="24011" ReliabilityID="1">
+            <Comment />
+            <VersionDetail DetailTypeID="1432">0x8589427373D6D84E98730D7795D8f6f8731FDA16</VersionDetail>
+          </FeatureVersion>
+          <IdentityReference IdentityID="5002" IdentityFeatureLinkTypeID="1" />
+        </Feature>
+        <Feature ID="26202" FeatureTypeID="345">
+          <FeatureVersion ID="24012" ReliabilityID="1">
+            <Comment />
+            <VersionDetail DetailTypeID="1432">See OFAC website for updated address</VersionDetail>
+          </FeatureVersion>
+          <IdentityReference IdentityID="5002" IdentityFeatureLinkTypeID="1" />
+        </Feature>
+      </Profile>
+    </DistinctParty>
+  </DistinctParties>
+  <SanctionsEntries>
+    <SanctionsEntry ID="1001" ProfileID="1001" ListID="1550">
+      <SanctionsMeasure ID="16100" SanctionsTypeID="1705">
+        <Comment />
+        <DatePeriod CalendarTypeID="1" />
+      </SanctionsMeasure>
+      <SanctionsMeasure ID="16101" SanctionsTypeID="1">
+        <Comment>CYBER2</Comment>
+        <DatePeriod CalendarTypeID="1" />
+      </SanctionsMeasure>
+    </SanctionsEntry>
+    <SanctionsEntry ID="1002" ProfileID="1002" ListID="1550">
+      <SanctionsMeasure ID="16200" SanctionsTypeID="1">
+        <Comment>DPRK3</Comment>
+        <DatePeriod CalendarTypeID="1" />
+      </SanctionsMeasure>
+    </SanctionsEntry>
+  </SanctionsEntries>
+</Sanctions>

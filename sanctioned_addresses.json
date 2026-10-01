@@ -1032,6 +1032,12 @@
     "chain": "TRX"
   },
   {
+    "address": "TBEmt7kPSwAv6NJTYKNdBVW524bUfPwJpJ",
+    "name": "Hernandez Guerrero Anthony Wuiliam",
+    "program": "SDGT; TCO",
+    "chain": "TRX"
+  },
+  {
     "address": "TBEqQGTxXRWXXeqe7ZwmSB6hc5MMMMMMMM",
     "name": "Xinbi Guarantee",
     "program": "TCO",
@@ -1164,9 +1170,21 @@
     "chain": "TRX"
   },
   {
+    "address": "TCUmMCHQEbFFdGvfdg2LeS64QfzUKP2AgW",
+    "name": "Cardenas Arzola Eric Gabriel",
+    "program": "SDGT; TCO",
+    "chain": "TRX"
+  },
+  {
     "address": "TCXihiScsAodR942Xq45df9qQAdr5nhkjQ",
     "name": "ISIL Khorasan",
     "program": "FTO; SDGT",
+    "chain": "TRX"
+  },
+  {
+    "address": "TCifMAMwst3oEJx8GaNfqZw75dkFUa8vjG",
+    "name": "Martinez Armenta Carlos Javier",
+    "program": "SDGT; TCO",
     "chain": "TRX"
   },
   {
@@ -1287,6 +1305,12 @@
     "address": "TDxXXmCELgrb5VwYobDMyTKVTTdY9LjEjx",
     "name": "ISIL Khorasan",
     "program": "FTO; SDGT",
+    "chain": "TRX"
+  },
+  {
+    "address": "TDxZ1XTZCmqkJJW2eJT362z6omRchJyGBX",
+    "name": "Martinez Pirona Oscar Leonardo",
+    "program": "SDGT; TCO",
     "chain": "TRX"
   },
   {
@@ -1524,6 +1548,12 @@
     "chain": "TRX"
   },
   {
+    "address": "THwbVuBBb26abe5TrAsYUpYz9mhWnBppdz",
+    "name": "Galeano Bazurto Jose Dario",
+    "program": "SDGT; TCO",
+    "chain": "TRX"
+  },
+  {
     "address": "TJ6NznpBV5uUpp5uZGDub9zD1999999999",
     "name": "Xinbi Guarantee",
     "program": "TCO",
@@ -1545,6 +1575,12 @@
     "address": "TJdgB1k6ot3f2nLuZug6D8eD3HavTmzmSK",
     "name": "BANK MARKAZI JOMHOURI ISLAMI IRAN",
     "program": "IFSR; IRAN; IRGC; SDGT",
+    "chain": "TRX"
+  },
+  {
+    "address": "TJjRAn9kLiyh8h6gjBjaYjkfDkskgZfyW9",
+    "name": "CANELON AGUIRRE Anibal Alexander",
+    "program": "SDGT; TCO",
     "chain": "TRX"
   },
   {
@@ -2271,6 +2307,12 @@
     "address": "TWHwre81Mv4hvupNdHnsYX9FPocm29dQQQ",
     "name": "Xinbi Guarantee",
     "program": "TCO",
+    "chain": "TRX"
+  },
+  {
+    "address": "TWJmTGhquvdp1jhBmgeGxBBwefteGZUQYW",
+    "name": "Mejia Castillo Alejandro",
+    "program": "SDGT; TCO",
     "chain": "TRX"
   },
   {

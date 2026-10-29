@@ -174,6 +174,12 @@
     "chain": "ETH"
   },
   {
+    "address": "0x12ea80238c7d805d003ce793594e92d84a6f4e8d",
+    "name": "Boykov Ilya Aleksandrovich",
+    "program": "DPRK2",
+    "chain": "ETH"
+  },
+  {
     "address": "0x14779cec0b117d5194c750c55ea1f42086631964",
     "name": "Ojeda Aviles Armando de Jesus",
     "program": "ILLICIT-DRUGS-EO14059; SDGT",
@@ -447,6 +453,12 @@
     "address": "0x747afb5c7a7fc34b547cd0fdebf9b91759c5a52b",
     "name": "Sim Hyon Sop",
     "program": "NPWMD",
+    "chain": "ETH"
+  },
+  {
+    "address": "0x761edd5e4546229a0bd35ae99b4d3d01cf4a3510",
+    "name": "Boykov Ilya Aleksandrovich",
+    "program": "DPRK2",
     "chain": "ETH"
   },
   {
@@ -753,6 +765,12 @@
     "address": "0xe3d35f68383732649669aa990832e017340dbca5",
     "name": "ALIVAND Arash Estaki",
     "program": "IFSR; SDGT",
+    "chain": "ETH"
+  },
+  {
+    "address": "0xe4c9a7f68b1eba4508f54f07f7378847318dd1a3",
+    "name": "Kim Ki Hyok",
+    "program": "DPRK2",
     "chain": "ETH"
   },
   {
@@ -1176,6 +1194,12 @@
     "chain": "TRX"
   },
   {
+    "address": "TCV4qdpTxoMyqkn7sSPeRrXmhH5JFxMvmT",
+    "name": "Obertas Vitold Viktorovich",
+    "program": "DPRK2",
+    "chain": "TRX"
+  },
+  {
     "address": "TCXihiScsAodR942Xq45df9qQAdr5nhkjQ",
     "name": "ISIL Khorasan",
     "program": "FTO; SDGT",
@@ -1419,6 +1443,12 @@
     "address": "TFh7Z4qmdiT7opAYYLmNVXQJtVCkAtg7Zh",
     "name": "ISIL Khorasan",
     "program": "FTO; SDGT",
+    "chain": "TRX"
+  },
+  {
+    "address": "TFksjBcHPYqgAax2USheQuaT1ydRKyZRdg",
+    "name": "Obertas Vitold Viktorovich",
+    "program": "DPRK2",
     "chain": "TRX"
   },
   {
@@ -1911,6 +1941,18 @@
     "address": "TQ8a74SiDig3EDSC14tosLACWLbvaNYwCJ",
     "name": "ISIL Khorasan",
     "program": "FTO; SDGT",
+    "chain": "TRX"
+  },
+  {
+    "address": "TQCBdU4K92oxLAkzwexZpqVZJhmPbtLYMm",
+    "name": "Obertas Vitold Viktorovich",
+    "program": "DPRK2",
+    "chain": "TRX"
+  },
+  {
+    "address": "TQKoDq5aCrWAciiNtete5pDYVN38i4qFN1",
+    "name": "Boykov Ilya Aleksandrovich",
+    "program": "DPRK2",
     "chain": "TRX"
   },
   {
@@ -2415,6 +2457,12 @@
     "address": "TXka5xc6mEkcoVXR7F2TFDKernyLt3XyW4",
     "name": "Xinbi Guarantee",
     "program": "TCO",
+    "chain": "TRX"
+  },
+  {
+    "address": "TXmrnVgsqCMJncYHTXchuJ5z111BXSj4g3",
+    "name": "Boykov Ilya Aleksandrovich",
+    "program": "DPRK2",
     "chain": "TRX"
   },
   {

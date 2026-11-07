@@ -1236,6 +1236,12 @@
     "chain": "TRX"
   },
   {
+    "address": "TCreRMzGspdHNEkqkasejS6xTzqXNkYJJZ",
+    "name": "CCC Inc",
+    "program": "IRAN-EO13902",
+    "chain": "TRX"
+  },
+  {
     "address": "TCu5onCzXuqxjvVzdB2tR4FLuF66d4yRqf",
     "name": "Sokolovski Rolan",
     "program": "ILLICIT-DRUGS-EO14059",
@@ -1560,6 +1566,12 @@
     "chain": "TRX"
   },
   {
+    "address": "THauYJJEaFGLpEknoKnYmXmT5TCeQGKjDE",
+    "name": "1380079 BC Ltd",
+    "program": "IRAN-EO13902",
+    "chain": "TRX"
+  },
+  {
     "address": "THfLaNMBAMz7xXnHoz5BkRMmrwuHKqfAfR",
     "name": "ISIL Khorasan",
     "program": "FTO; SDGT",
@@ -1599,6 +1611,18 @@
     "address": "TJGVHmHVNuU1vsXGGALLoirPwoRZoMUuhg",
     "name": "ISIL Khorasan",
     "program": "FTO; SDGT",
+    "chain": "TRX"
+  },
+  {
+    "address": "TJHZswisiMgjioAVpmpMSWXCeQGCPjcTMK",
+    "name": "Diverse Trade Inc",
+    "program": "IRAN-EO13902",
+    "chain": "TRX"
+  },
+  {
+    "address": "TJT3JZKJWVHVkKRKSmWmg5UYHhAqBM7mfP",
+    "name": "1380079 BC Ltd",
+    "program": "IRAN-EO13902",
     "chain": "TRX"
   },
   {
@@ -1701,6 +1725,12 @@
     "address": "TLvuvpfBKdxddxSsJefeiGCe9eVY8HUroE",
     "name": "Zedcex Exchange Ltd",
     "program": "IFSR; IRAN-EO13902; SDGT",
+    "chain": "TRX"
+  },
+  {
+    "address": "TLyRLCNwBhaXkYak1bTFUYTj72crbgN5Vy",
+    "name": "1380079 BC Ltd",
+    "program": "IRAN-EO13902",
     "chain": "TRX"
   },
   {
@@ -2319,6 +2349,12 @@
     "address": "TVttWTHTCU9kULP51m9BaHpmCW8H1BJJNQ",
     "name": "ISIL Khorasan",
     "program": "FTO; SDGT",
+    "chain": "TRX"
+  },
+  {
+    "address": "TW5NEaaoPHXC1rt5PaYgG474gQ49oiZ2F5",
+    "name": "2397639 Ontario Ltd",
+    "program": "IRAN-EO13902",
     "chain": "TRX"
   },
   {

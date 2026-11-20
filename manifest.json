@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-19T00:24:25.624834768Z",
+  "generated_at": "2026-11-20T00:22:49.540157911Z",
   "source_url": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/sdn_advanced.xml",
-  "source_last_modified": "Wed, 18 Nov 2026 17:35:51 GMT",
-  "source_sha256": "5faebb7de4e8a55cbea5672a37f0c32ef194628d412eb5c0a2616339432c83dd",
-  "total": 1077,
+  "source_last_modified": "Thu, 19 Nov 2026 14:31:59 GMT",
+  "source_sha256": "e232798b0023512a39e9f2c3652c13a8c9d843bf1e415aceeaa9fb00f25c73c8",
+  "total": 1078,
   "per_chain_counts": {
     "ARB": 1,
     "BCH": 7,
@@ -17,7 +17,7 @@
     "ETH": 123,
     "LTC": 13,
     "SOL": 4,
-    "TRX": 272,
+    "TRX": 273,
     "USDC": 2,
     "USDT": 94,
     "XBT": 532,

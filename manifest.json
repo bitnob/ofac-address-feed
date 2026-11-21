@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-11-20T00:22:49.540157911Z",
+  "generated_at": "2026-11-21T00:24:16.075370998Z",
   "source_url": "https://sanctionslistservice.ofac.treas.gov/api/PublicationPreview/exports/sdn_advanced.xml",
-  "source_last_modified": "Thu, 19 Nov 2026 14:31:59 GMT",
-  "source_sha256": "e232798b0023512a39e9f2c3652c13a8c9d843bf1e415aceeaa9fb00f25c73c8",
+  "source_last_modified": "Fri, 20 Nov 2026 20:32:29 GMT",
+  "source_sha256": "1a58dd210db4b67670a10ba1d5f84173fd9590ad96f32f8f6797b3bd4c24ccbf",
   "total": 1078,
   "per_chain_counts": {
     "ARB": 1,
